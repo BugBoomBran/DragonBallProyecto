@@ -31,11 +31,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.3rem 0.5rem;
-  background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255));
+  /* background: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255)); */
+  background-color: black;
 }
 
 .titulo {
-  color: rgb(255, 255, 255);
+  color: #ff4500;
   text-transform: uppercase;
   font-size: 1.2rem;
 }
@@ -47,7 +48,7 @@
 .nav__link {
   text-transform: uppercase;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #ff4500;
   font-size: 0.8rem;
 }
 
@@ -122,7 +123,8 @@ h2:hover {
   background-color: rgb(0 0 0 / 71%);
 }
 
-.img__pages {
+.img__pages,
+.img__sagas {
   width: 15rem;
   height: 15rem;
   border-style: double;
@@ -145,7 +147,7 @@ h2:hover {
 }
 
 .pages__text {
-  color: rgb(255 114 0 / 75%);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 1.2rem;
 }
 
@@ -252,13 +254,22 @@ h2:hover {
     margin: 12rem 0 12rem 0;
   }
 
-  .imgrowl {
+  .rowlpeli {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .rowlsagas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .img__pages {
     height: 20rem;
+  }
+
+  .img__sagas {
+    width: 25rem;
   }
 
   .img-vg {
