@@ -1,0 +1,17 @@
+// index
+
+.intro {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 7rem 0 7rem 0;
+
+  &__box {
+    margin: 5rem 0 5rem 0;
+  }
+
+  &__img {
+    width: 15rem;
+    border-style: double;
+    background-color: $secundar-color;
+  }
+}

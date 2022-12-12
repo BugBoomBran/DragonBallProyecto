@@ -1,0 +1,24 @@
+// contacto
+
+.form {
+  &__names {
+    @include crear-flexbox2(row, flex-end);
+    margin: 5rem 0 0.5rem 0;
+    border-style: double;
+    background-color: $secundar-color;
+    color: $primary-color;
+    flex-wrap: wrap;
+  }
+
+  &__area {
+    @include crear-flexbox2(column, center);
+    border-style: double;
+    background-color: $secundar-color;
+    color: $primary-color;
+  }
+
+  &__enviar {
+    margin: 0.5rem 0 2rem 0;
+    background-color: $primary-color;
+  }
+}

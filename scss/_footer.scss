@@ -1,0 +1,9 @@
+// footer
+
+.iconos {
+  @include crear-flexbox(space-around);
+
+  &__contact {
+    width: 2rem;
+  }
+}

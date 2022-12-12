@@ -1,0 +1,24 @@
+// navbar
+
+.nav {
+  @include crear-flexbox(space-between);
+  padding: 0.3rem 0.5rem;
+  background-color: $secundar-color;
+
+  &-title {
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 0.8rem;
+  }
+}

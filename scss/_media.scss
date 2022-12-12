@@ -1,0 +1,105 @@
+/* @medias */
+
+@include mobile {
+  .container {
+    width: 85%;
+  }
+
+  .nav {
+    &__list {
+      display: flex;
+      border: 1px;
+      justify-content: flex-end;
+    }
+
+    &__link {
+      margin: 0.5rem;
+    }
+  }
+
+  .intro {
+    margin: 5rem 0 5rem 0;
+
+    &__box {
+      margin: 10rem 2rem 10rem 2rem;
+    }
+
+    &__img {
+      width: 20rem;
+    }
+  }
+
+  .vg {
+    &__text {
+      font-size: 12px;
+    }
+  }
+
+  .form {
+    padding: 5rem 0 5rem 0;
+    height: 52rem;
+
+    &__names {
+      justify-content: space-between;
+    }
+  }
+}
+
+@include desktop {
+  .nav {
+    padding: 0.6rem 0 0.6rem 0;
+
+    &-title {
+      margin: 0 0 0 0.5rem;
+      font-size: none;
+    }
+  }
+
+  .intro {
+    @include crear-flexbox2(row, space-around);
+    margin: -3rem 0 -4rem 0;
+
+    &__box {
+      margin: 12rem 0 12rem 0;
+    }
+
+    &__img {
+      width: 25rem;
+    }
+  }
+
+  .peli {
+    @include crear-grid(1fr 1fr 1fr);
+
+    &__img {
+      height: 20rem;
+    }
+  }
+
+  .sagas {
+    @include crear-grid(1fr 1fr);
+
+    &__img {
+      width: 25rem;
+    }
+  }
+
+  .vg {
+    display: flex;
+    flex-direction: row;
+    height: 25rem;
+
+    &__text {
+      font-size: 25px;
+    }
+  }
+
+  .form {
+    height: auto;
+    padding: 0 0 0 0;
+
+    &__enviar {
+      margin: 0 0 5rem 0;
+    }
+  }
+}

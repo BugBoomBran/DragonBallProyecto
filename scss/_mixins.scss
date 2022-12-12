@@ -1,0 +1,36 @@
+@mixin crear-flexbox($space) {
+  display: flex;
+  text-align: center;
+  justify-content: $space;
+}
+
+@mixin crear-flexbox2($direc, $cont) {
+  display: flex;
+  flex-direction: $direc;
+  justify-content: $cont;
+}
+
+@mixin crear-grid($fracc) {
+  display: grid;
+  grid-template-columns: $fracc;
+}
+
+@mixin arreglar-img {
+  background: {
+    size: cover;
+    repeat: no-repeat;
+    position: fixed;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
