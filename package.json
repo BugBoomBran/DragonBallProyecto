@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Brandon-Acosta-DEV/DragonBallProyecto/issues"
   },
-  "homepage": "https://github.com/Brandon-Acosta-DEV/DragonBallProyecto#readme"
+  "homepage": "https://github.com/Brandon-Acosta-DEV/DragonBallProyecto#readme",
+  "dependencies": {
+    "sass": "^1.56.2"
+  }
 }
